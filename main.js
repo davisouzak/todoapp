@@ -1,5 +1,6 @@
 const inputBox = document.getElementById("input-box")
 const listContainer = document.getElementById("list-container")
+const addButton = document.getElementById("button")
 
 function addTask() {
     if(inputBox.value === '') {
@@ -37,3 +38,9 @@ function showTask() {
 }
 showTask() 
 
+
+inputBox.addEventListener("keyup", event => {
+    if (event.key !== "Enter") return
+    addButton.click()
+    event.preventDefault()
+})
