@@ -102,3 +102,38 @@ ul li span {
 ul li span:hover {
     background: #F2F2F2;
 }
+
+@media (max-width: 768px) {
+    .todo {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        padding: 12px 30px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        padding-left: 1px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
